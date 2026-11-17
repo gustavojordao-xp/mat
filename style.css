@@ -1,0 +1,34 @@
+/* Arquivo: style.css (Paleta Automotiva & Responsividade) */
+:root {
+    --bg-carbon: #0f1115;
+    --bg-panel: #161920;
+    --border-steel: #2a2f3a;
+    --accent-racing: #f97316;
+    --accent-electric: #38bdf8;
+    --text-main: #f8fafc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-carbon);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.steel-card {
+    background: linear-gradient(145deg, var(--bg-panel), #12151b);
+    border: 1px solid var(--border-steel);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: border-color 0.25s ease;
+}
+
+.steel-card:hover {
+    border-color: var(--accent-racing);
+}
